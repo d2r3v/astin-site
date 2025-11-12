@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Mail, MapPin, Phone } from "lucide-react";
+import { MeshPattern } from "@/components/BackgroundPatterns";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -29,8 +30,18 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-20 px-4 sm:px-6 lg:px-8 bg-slate-50">
-      <div className="max-w-7xl mx-auto">
+    <section id="contact" className="relative py-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
+      {/* Slate background */}
+      <div className="absolute inset-0 bg-slate-50" />
+      
+      {/* Mesh grid pattern */}
+      <MeshPattern />
+      
+      {/* Subtle accents */}
+      <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-100/20 rounded-full blur-3xl" />
+      <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-orange-100/15 rounded-full blur-3xl" />
+      
+      <div className="relative max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-4">
             Get in Touch

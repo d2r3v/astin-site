@@ -1,4 +1,5 @@
 import logo from "@/assets/Company_logo.png";
+import { MeshPattern } from "@/components/BackgroundPatterns";
 
 const Footer = () => {
   const scrollToSection = (id: string) => {
@@ -9,8 +10,13 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-slate-900 text-white py-12 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-7xl mx-auto">
+    <footer className="relative bg-slate-900 text-white py-12 px-4 sm:px-6 lg:px-8 overflow-hidden">
+      {/* Mesh pattern overlay for footer */}
+      <div className="absolute inset-0 opacity-30">
+        <MeshPattern />
+      </div>
+      
+      <div className="relative max-w-7xl mx-auto">
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           {/* Company Info */}
           <div className="md:col-span-2">

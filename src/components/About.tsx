@@ -1,7 +1,19 @@
+import { NodeLinkPattern } from "@/components/BackgroundPatterns";
+
 const About = () => {
   return (
-    <section id="about" className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
-      <div className="max-w-5xl mx-auto">
+    <section id="about" className="relative py-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
+      {/* Clean background */}
+      <div className="absolute inset-0 bg-white" />
+      
+      {/* Node-link geometric pattern */}
+      <NodeLinkPattern />
+      
+      {/* Very subtle gradient accents */}
+      <div className="absolute top-1/3 right-1/3 w-96 h-96 bg-blue-50/40 rounded-full blur-3xl" />
+      <div className="absolute bottom-1/3 left-1/3 w-96 h-96 bg-orange-50/30 rounded-full blur-3xl" />
+      
+      <div className="relative max-w-5xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-4">
             About Astin Analytics
