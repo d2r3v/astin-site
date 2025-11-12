@@ -1,4 +1,4 @@
-import logo from "@/assets/Company_logo.png";
+import logo from "@/assets/logo_white_transparent.png";
 import { MeshPattern } from "@/components/BackgroundPatterns";
 
 const Footer = () => {
@@ -20,17 +20,19 @@ const Footer = () => {
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           {/* Company Info */}
           <div className="md:col-span-2">
-            <div className="flex items-center gap-3 mb-4">
+            <div className="mb-4">
               <img 
                 src={logo} 
-                alt="Astin Analytics Logo" 
-                className="h-12 w-auto"
+                alt="Astin Analytics" 
+                className="h-14 w-auto mb-3"
               />
-              <h3 className="text-2xl font-bold">Astin Analytics</h3>
             </div>
             <p className="text-slate-400 mb-4 max-w-md">
-              Delivering AI-driven solutions for Education, Enterprise, and Government. 
-              Transforming organizations through innovation and technical excellence.
+              Smarter Operations · Trusted AI
+            </p>
+            <p className="text-slate-500 text-sm mb-4 max-w-md">
+              Building intelligent, adaptive systems for institutions, enterprises, 
+              and government agencies.
             </p>
             <div className="flex gap-4">
               <a
@@ -107,10 +109,10 @@ const Footer = () => {
               </li>
               <li>
                 <button
-                  onClick={() => scrollToSection("strengths")}
+                  onClick={() => scrollToSection("impact")}
                   className="text-slate-400 hover:text-white transition-colors"
                 >
-                  Key Strengths
+                  Impact
                 </button>
               </li>
               <li>
@@ -129,9 +131,9 @@ const Footer = () => {
             <h4 className="text-lg font-semibold mb-4">Solutions</h4>
             <ul className="space-y-2">
               <li className="text-slate-400">Smart Access Control</li>
-              <li className="text-slate-400">Authentication Services</li>
+              <li className="text-slate-400">Classroom Attendance (CAS)</li>
               <li className="text-slate-400">Custom AI Solutions</li>
-              <li className="text-slate-400">Consulting Services</li>
+              <li className="text-slate-400">Implementation & Support</li>
             </ul>
           </div>
         </div>
@@ -140,7 +142,7 @@ const Footer = () => {
         <div className="pt-8 border-t border-slate-800">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-slate-400 text-sm">
-              © {new Date().getFullYear()} Astin Analytics. All rights reserved.
+              © {new Date().getFullYear()} Astin Analytics · Smarter Operations · Trusted AI
             </p>
             <div className="flex gap-6 text-sm">
               <a

@@ -13,6 +13,16 @@ export default {
         border: "hsl(214.3 31.8% 91.4%)",
         background: "hsl(0 0% 100%)",
         foreground: "hsl(222.2 84% 4.9%)",
+        primary: {
+          DEFAULT: '#1e40af', // Blue 800
+          light: '#3b82f6',   // Blue 500
+          dark: '#1e3a8a',    // Blue 900
+        },
+        secondary: {
+          DEFAULT: '#dc2626', // Red 600
+          light: '#ef4444',   // Red 500
+          dark: '#991b1b',    // Red 800
+        },
       },
       animation: {
         "fade-in": "fadeIn 0.6s ease-in-out",

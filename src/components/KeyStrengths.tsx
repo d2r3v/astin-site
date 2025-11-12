@@ -4,36 +4,28 @@ import { WaveTop } from "@/components/BackgroundPatterns";
 const KeyStrengths = () => {
   const strengths = [
     {
-      title: "AI-First Approach",
-      description: "We leverage the latest advancements in artificial intelligence and machine learning to create intelligent, adaptive solutions.",
+      title: "99.9% Face-Recognition Accuracy",
+      description: "Industry-leading precision ensures reliable identification in real-world conditions.",
     },
     {
-      title: "Cross-Sector Expertise",
-      description: "Deep understanding of Education, Enterprise, and Government needs allows us to deliver targeted, effective solutions.",
+      title: "Adaptive, Self-Learning AI Engine",
+      description: "Continuously improves performance through machine learning, adapting to your environment.",
     },
     {
-      title: "Security & Compliance",
-      description: "Built with enterprise-grade security from the ground up, meeting industry standards and regulatory requirements.",
+      title: "Proven High-Security Deployments",
+      description: "Successfully implemented in sensitive environments requiring the highest security standards.",
     },
     {
-      title: "Scalable Architecture",
-      description: "Cloud-native solutions that grow with your organization, from pilot programs to full-scale deployments.",
+      title: "Modular, Scalable Systems",
+      description: "Flexible architecture designed for education, corporates, and government — scales with your needs.",
     },
     {
-      title: "Rapid Deployment",
-      description: "Streamlined implementation processes that minimize disruption and maximize time-to-value.",
+      title: "End-to-End Support",
+      description: "Complete lifecycle management: deployment, training, and ongoing troubleshooting support.",
     },
     {
-      title: "Continuous Innovation",
-      description: "Ongoing research and development ensures our solutions stay ahead of the technological curve.",
-    },
-    {
-      title: "Dedicated Support",
-      description: "Expert technical support and consulting services to ensure your success at every stage.",
-    },
-    {
-      title: "Custom Integration",
-      description: "Seamless integration with your existing systems and workflows, preserving your current investments.",
+      title: "Battle-Tested Leadership",
+      description: "Backed by 30+ years of IT and telecom expertise combined with specialized AI innovation.",
     },
   ];
 
@@ -45,29 +37,29 @@ const KeyStrengths = () => {
       {/* Wave accent at top */}
       <WaveTop />
       
-      {/* Minimal gradient accents */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-blue-50/30 rounded-full blur-3xl" />
+      {/* Minimal gradient accents with new color palette */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-primary/5 rounded-full blur-3xl" />
       
       <div className="relative max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-4">
-            Why Choose Astin Analytics
+            What Sets Us Apart
           </h2>
-          <div className="w-20 h-1 bg-blue-600 mx-auto mb-6"></div>
+          <div className="w-20 h-1 bg-secondary mx-auto mb-6"></div>
           <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-            Our competitive advantages that set us apart in the AI solutions landscape
+            Proven expertise meets cutting-edge AI innovation
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
           {strengths.map((strength, index) => (
             <div
               key={index}
-              className="group p-6 rounded-lg border border-slate-200 hover:border-blue-300 hover:shadow-md transition-all duration-300"
+              className="group p-6 rounded-lg border-2 border-slate-200 hover:border-primary hover:shadow-lg transition-all duration-300 bg-white"
             >
               <div className="flex items-start gap-3">
                 <CheckCircle2
-                  className="text-blue-600 flex-shrink-0 mt-1 group-hover:scale-110 transition-transform"
+                  className="text-primary flex-shrink-0 mt-1 group-hover:scale-110 transition-transform"
                   size={24}
                 />
                 <div>

@@ -22,16 +22,13 @@ const Navbar = () => {
           <div className="flex items-center">
             <button
               onClick={() => scrollToSection("hero")}
-              className="flex items-center gap-2 hover:opacity-80 transition-opacity"
+              className="hover:opacity-80 transition-opacity"
             >
               <img 
                 src={logo} 
-                alt="Astin Analytics Logo" 
+                alt="Astin Analytics" 
                 className="h-10 w-auto"
               />
-              <span className="text-xl font-bold text-slate-900 hidden sm:block">
-                Astin Analytics
-              </span>
             </button>
           </div>
 
@@ -39,25 +36,25 @@ const Navbar = () => {
           <div className="hidden md:flex items-center space-x-8">
             <button
               onClick={() => scrollToSection("about")}
-              className="text-slate-600 hover:text-blue-600 transition-colors font-medium"
+              className="text-slate-600 hover:text-primary transition-colors font-medium"
             >
               About
             </button>
             <button
               onClick={() => scrollToSection("solutions")}
-              className="text-slate-600 hover:text-blue-600 transition-colors font-medium"
+              className="text-slate-600 hover:text-primary transition-colors font-medium"
             >
               Solutions
             </button>
             <button
-              onClick={() => scrollToSection("strengths")}
-              className="text-slate-600 hover:text-blue-600 transition-colors font-medium"
+              onClick={() => scrollToSection("impact")}
+              className="text-slate-600 hover:text-primary transition-colors font-medium"
             >
-              Key Strengths
+              Impact
             </button>
             <button
               onClick={() => scrollToSection("contact")}
-              className="text-slate-600 hover:text-blue-600 transition-colors font-medium"
+              className="text-slate-600 hover:text-primary transition-colors font-medium"
             >
               Contact
             </button>
@@ -70,7 +67,7 @@ const Navbar = () => {
           <div className="md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="text-slate-600 hover:text-blue-600 transition-colors"
+              className="text-slate-600 hover:text-primary transition-colors"
             >
               {isOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
@@ -84,25 +81,25 @@ const Navbar = () => {
           <div className="px-4 pt-2 pb-4 space-y-2">
             <button
               onClick={() => scrollToSection("about")}
-              className="block w-full text-left px-3 py-2 text-slate-600 hover:text-blue-600 hover:bg-slate-50 rounded-md transition-colors font-medium"
+              className="block w-full text-left px-3 py-2 text-slate-600 hover:text-primary hover:bg-slate-50 rounded-md transition-colors font-medium"
             >
               About
             </button>
             <button
               onClick={() => scrollToSection("solutions")}
-              className="block w-full text-left px-3 py-2 text-slate-600 hover:text-blue-600 hover:bg-slate-50 rounded-md transition-colors font-medium"
+              className="block w-full text-left px-3 py-2 text-slate-600 hover:text-primary hover:bg-slate-50 rounded-md transition-colors font-medium"
             >
               Solutions
             </button>
             <button
-              onClick={() => scrollToSection("strengths")}
-              className="block w-full text-left px-3 py-2 text-slate-600 hover:text-blue-600 hover:bg-slate-50 rounded-md transition-colors font-medium"
+              onClick={() => scrollToSection("impact")}
+              className="block w-full text-left px-3 py-2 text-slate-600 hover:text-primary hover:bg-slate-50 rounded-md transition-colors font-medium"
             >
-              Key Strengths
+              Impact
             </button>
             <button
               onClick={() => scrollToSection("contact")}
-              className="block w-full text-left px-3 py-2 text-slate-600 hover:text-blue-600 hover:bg-slate-50 rounded-md transition-colors font-medium"
+              className="block w-full text-left px-3 py-2 text-slate-600 hover:text-primary hover:bg-slate-50 rounded-md transition-colors font-medium"
             >
               Contact
             </button>

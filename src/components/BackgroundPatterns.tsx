@@ -12,8 +12,8 @@ export const MeshPattern = () => (
       <pattern id="mesh" width="80" height="80" patternUnits="userSpaceOnUse">
         <path 
           d="M0 40 H80 M40 0 V80" 
-          stroke="#2563eb" 
-          strokeOpacity="0.05" 
+          stroke="#1e40af" 
+          strokeOpacity="0.02" 
           strokeWidth="1"
         />
       </pattern>
@@ -32,13 +32,13 @@ export const NodeLinkPattern = () => (
   >
     <defs>
       <pattern id="node-link" width="100" height="100" patternUnits="userSpaceOnUse">
-        <circle cx="10" cy="10" r="2" fill="#2563eb" fillOpacity="0.15" />
-        <circle cx="70" cy="40" r="2" fill="#2563eb" fillOpacity="0.15" />
-        <circle cx="40" cy="70" r="2" fill="#2563eb" fillOpacity="0.15" />
+        <circle cx="10" cy="10" r="2" fill="#1e40af" fillOpacity="0.08" />
+        <circle cx="70" cy="40" r="2" fill="#1e40af" fillOpacity="0.08" />
+        <circle cx="40" cy="70" r="2" fill="#1e40af" fillOpacity="0.08" />
         <path 
           d="M10 10 L70 40 L40 70 Z" 
-          stroke="#2563eb" 
-          strokeOpacity="0.1" 
+          stroke="#1e40af" 
+          strokeOpacity="0.05" 
           strokeWidth="1" 
           fill="none"
         />
@@ -57,8 +57,8 @@ export const WaveBottom = () => (
     preserveAspectRatio="none"
   >
     <path 
-      fill="#2563eb" 
-      fillOpacity="0.05"
+      fill="#1e40af" 
+      fillOpacity="0.03"
       d="M0,160L80,165.3C160,171,320,181,480,165.3C640,149,800,107,960,106.7C1120,107,1280,149,1360,170.7L1440,192V0H0Z"
     />
   </svg>
@@ -73,8 +73,8 @@ export const WaveTop = () => (
     preserveAspectRatio="none"
   >
     <path 
-      fill="#ea580c" 
-      fillOpacity="0.04"
+      fill="#dc2626" 
+      fillOpacity="0.02"
       d="M0,160L80,165.3C160,171,320,181,480,165.3C640,149,800,107,960,106.7C1120,107,1280,149,1360,170.7L1440,192V0H0Z"
     />
   </svg>
@@ -93,7 +93,7 @@ export const DotsPattern = () => (
         height="20"
         patternUnits="userSpaceOnUse"
       >
-        <circle cx="2" cy="2" r="1" fill="currentColor" opacity="0.3" />
+        <circle cx="2" cy="2" r="1" fill="#1e40af" opacity="0.15" />
       </pattern>
     </defs>
     <rect width="100%" height="100%" fill="url(#dots-pattern)" />
