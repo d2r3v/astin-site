@@ -16,7 +16,7 @@ const Contact = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     // In a real application, you would send this data to your backend
-    const mailtoLink = `mailto:contact@astinanalytics.com?subject=Contact from ${formData.name}&body=${formData.message}`;
+    const mailtoLink = `mailto:info@astinanalytics.com?subject=Contact from ${formData.name}&body=${formData.message}`;
     window.location.href = mailtoLink;
   };
 
@@ -46,9 +46,9 @@ const Contact = () => {
           <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-4">
             Get in Touch
           </h2>
-          <div className="w-20 h-1 bg-blue-600 mx-auto mb-6"></div>
+          <div className="w-20 h-1 bg-primary mx-auto mb-6"></div>
           <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-            Ready to transform your organization with AI? Let's start a conversation.
+            Let's build smarter, faster, and safer systems together.
           </p>
         </div>
 
@@ -150,10 +150,10 @@ const Contact = () => {
                   <div>
                     <h4 className="font-semibold text-slate-900 mb-1">Email</h4>
                     <a
-                      href="mailto:contact@astinanalytics.com"
+                      href="mailto:info@astinanalytics.com"
                       className="text-blue-600 hover:text-blue-700 transition-colors"
                     >
-                      contact@astinanalytics.com
+                      info@astinanalytics.com
                     </a>
                   </div>
                 </div>
@@ -164,7 +164,12 @@ const Contact = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold text-slate-900 mb-1">Phone</h4>
-                    <p className="text-slate-600">Available upon request</p>
+                    <a
+                      href="tel:+919310811188"
+                      className="text-slate-600 hover:text-slate-900 transition-colors"
+                    >
+                      +91 93108 11188
+                    </a>
                   </div>
                 </div>
 
@@ -174,11 +179,16 @@ const Contact = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold text-slate-900 mb-1">
-                      Location
+                      Website
                     </h4>
-                    <p className="text-slate-600">
-                      Serving clients worldwide
-                    </p>
+                    <a
+                      href="https://www.astinanalytics.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-blue-600 hover:text-blue-700 transition-colors"
+                    >
+                      www.astinanalytics.com
+                    </a>
                   </div>
                 </div>
               </div>

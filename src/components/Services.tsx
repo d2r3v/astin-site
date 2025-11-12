@@ -14,38 +14,38 @@ const Services = () => {
       icon: Shield,
       title: "Smart Access Control",
       description:
-        "Advanced biometric and AI-powered access management systems that enhance security while streamlining user experience. Perfect for educational institutions and enterprise environments.",
+        "Contactless, face-recognition entry and visitor management designed for secure, high-traffic environments. Real-time monitoring and automated reporting ensure reliability at scale.",
       features: [
-        "Facial recognition technology",
-        "Real-time monitoring & alerts",
-        "Seamless integration with existing systems",
-        "Scalable cloud infrastructure",
+        "Contactless face-recognition entry",
+        "Real-time monitoring & reporting",
+        "Visitor management system",
+        "High-traffic environment optimized",
       ],
       color: "blue",
     },
     {
       icon: Lock,
-      title: "Central Authentication Service (CAS)",
+      title: "Classroom Attendance System (CAS)",
       description:
-        "Enterprise-grade single sign-on (SSO) solution that simplifies authentication across multiple applications while maintaining the highest security standards.",
+        "Instant, secure facial-recognition attendance built for schools, universities, and examination centers. Seamlessly integrates with HRMS or custom systems through robust APIs.",
       features: [
-        "Multi-factor authentication",
-        "LDAP & Active Directory integration",
-        "Customizable authentication flows",
-        "Compliance with industry standards",
+        "Instant facial-recognition attendance",
+        "Built for educational institutions",
+        "HRMS integration via APIs",
+        "Examination center ready",
       ],
-      color: "orange",
+      color: "red",
     },
     {
       icon: Sparkles,
       title: "Custom AI Solutions",
       description:
-        "Tailored artificial intelligence applications designed to solve your unique business challenges, from predictive analytics to natural language processing.",
+        "Dedicated development teams design and implement tailored platforms that eliminate operational bottlenecks — delivering adaptable, data-driven intelligence for every organization.",
       features: [
-        "Machine learning model development",
-        "Data analysis & visualization",
-        "Process automation",
-        "Ongoing support & optimization",
+        "Tailored platform development",
+        "Eliminates operational bottlenecks",
+        "Adaptable, data-driven intelligence",
+        "Dedicated development teams",
       ],
       color: "blue",
     },
@@ -61,27 +61,26 @@ const Services = () => {
         <DotsPattern />
       </div>
       
-      {/* Light accent gradients */}
-      <div className="absolute top-1/3 right-1/4 w-96 h-96 bg-blue-100/20 rounded-full blur-3xl" />
-      <div className="absolute bottom-1/3 left-1/4 w-96 h-96 bg-orange-100/20 rounded-full blur-3xl" />
+      {/* Light accent gradients with new color palette */}
+      <div className="absolute top-1/3 right-1/4 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
+      <div className="absolute bottom-1/3 left-1/4 w-96 h-96 bg-secondary/5 rounded-full blur-3xl" />
       
       <div className="relative max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-4">
-            Our Solutions
+            Our Core Solutions
           </h2>
-          <div className="w-20 h-1 bg-blue-600 mx-auto mb-6"></div>
+          <div className="w-20 h-1 bg-primary mx-auto mb-6"></div>
           <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-            Comprehensive AI-driven solutions designed to meet the unique needs 
-            of modern organizations
+            Intelligent systems that optimize operations and enhance security
           </p>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {solutions.map((solution, index) => {
             const Icon = solution.icon;
-            const iconBgColor = solution.color === "blue" ? "bg-blue-100" : "bg-orange-100";
-            const iconColor = solution.color === "blue" ? "text-blue-600" : "text-orange-600";
+            const iconBgColor = solution.color === "blue" ? "bg-blue-100" : "bg-red-100";
+            const iconColor = solution.color === "blue" ? "text-primary" : "text-secondary";
 
             return (
               <Card
