@@ -6,6 +6,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Shield, Lock, Sparkles } from "lucide-react";
+import { DotsPattern } from "@/components/BackgroundPatterns";
 
 const Services = () => {
   const solutions = [
@@ -51,8 +52,20 @@ const Services = () => {
   ];
 
   return (
-    <section id="solutions" className="py-20 px-4 sm:px-6 lg:px-8 bg-slate-50">
-      <div className="max-w-7xl mx-auto">
+    <section id="solutions" className="relative py-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
+      {/* Subtle slate background */}
+      <div className="absolute inset-0 bg-slate-50" />
+      
+      {/* Dots pattern */}
+      <div className="absolute inset-0 text-slate-400">
+        <DotsPattern />
+      </div>
+      
+      {/* Light accent gradients */}
+      <div className="absolute top-1/3 right-1/4 w-96 h-96 bg-blue-100/20 rounded-full blur-3xl" />
+      <div className="absolute bottom-1/3 left-1/4 w-96 h-96 bg-orange-100/20 rounded-full blur-3xl" />
+      
+      <div className="relative max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-4">
             Our Solutions

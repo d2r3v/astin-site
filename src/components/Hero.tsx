@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Sparkles } from "lucide-react";
+import { WaveBottom } from "@/components/BackgroundPatterns";
 
 const Hero = () => {
   const scrollToSection = (id: string) => {
@@ -10,8 +11,18 @@ const Hero = () => {
   };
 
   return (
-    <section id="hero" className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-slate-50 to-white">
-      <div className="max-w-7xl mx-auto">
+    <section id="hero" className="relative pt-32 pb-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
+      {/* Clean gradient background */}
+      <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-white to-slate-50" />
+      
+      {/* Subtle radial accents */}
+      <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-blue-100/20 rounded-full blur-3xl" />
+      <div className="absolute bottom-1/4 left-1/4 w-96 h-96 bg-orange-100/15 rounded-full blur-3xl" />
+      
+      {/* Wave pattern at bottom */}
+      <WaveBottom />
+      
+      <div className="relative max-w-7xl mx-auto">
         <div className="text-center max-w-4xl mx-auto">
           {/* Badge */}
           <div className="inline-flex items-center gap-2 px-4 py-2 mb-8 bg-blue-50 text-blue-700 rounded-full text-sm font-medium">
