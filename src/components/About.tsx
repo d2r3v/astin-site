@@ -1,4 +1,9 @@
 import { NodeLinkPattern } from "@/components/BackgroundPatterns";
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 7ddf14f8dad63161bab4b83a5b954c46faa56699
 const About = () => {
   return (
     <section id="about" className="relative py-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
@@ -27,8 +32,12 @@ const About = () => {
             government sectors.
           </p>
           <p className="text-lg text-slate-600 leading-relaxed">
+<<<<<<< HEAD
             Founded by professionals with over 30 years of leadership in IT and telecommunications
             — and more than 5 years of dedicated AI solution development — we combine proven
+=======
+            Founded by professionals with over 30 years of leadership in IT and telecommunications, and more than 5 years of dedicated AI solution development, we combine proven
+>>>>>>> 7ddf14f8dad63161bab4b83a5b954c46faa56699
             expertise with a deep focus on innovation and reliability.
           </p>
         </div>
@@ -48,7 +57,11 @@ const About = () => {
               </div>
               <p className="text-slate-700 leading-relaxed">
                 To empower organizations by eliminating operational inefficiencies through
+<<<<<<< HEAD
                 intelligent, adaptive AI technologies — so they can focus on what truly matters:
+=======
+                intelligent, adaptive AI technologies, so they can focus on what truly matters:
+>>>>>>> 7ddf14f8dad63161bab4b83a5b954c46faa56699
                 <span className="font-semibold text-slate-900"> security, learning, governance, and innovation.</span>
               </p>
             </div>
