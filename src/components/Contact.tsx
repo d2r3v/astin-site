@@ -13,7 +13,7 @@ const Contact = () => {
 
       {/* Subtle accents */}
       <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-100/20 rounded-full blur-3xl" />
-      <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-orange-100/15 rounded-full blur-3xl" />
+      <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-blue-100/15 rounded-full blur-3xl" />
 
       <div className="relative max-w-7xl mx-auto">
         <div className="text-center mb-16">
@@ -49,8 +49,8 @@ const Contact = () => {
               </div>
 
               <div className="flex items-start gap-4">
-                <div className="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                  <Phone className="text-orange-600" size={24} />
+                <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <Phone className="text-blue-600" size={24} />
                 </div>
                 <div>
                   <h4 className="font-semibold text-slate-900 mb-1">Phone</h4>
@@ -84,21 +84,7 @@ const Contact = () => {
             </div>
           </div>
 
-          <div className="bg-blue-50 rounded-lg p-6 border border-blue-100">
-            <h4 className="font-bold text-slate-900 mb-3">
-              Business Hours
-            </h4>
-            <div className="space-y-2 text-slate-700">
-              <p className="flex justify-between">
-                <span>Monday - Friday:</span>
-                <span className="font-medium">9:00 AM - 6:00 PM</span>
-              </p>
-              <p className="flex justify-between">
-                <span>Saturday - Sunday:</span>
-                <span className="font-medium">Closed</span>
-              </p>
-            </div>
-          </div>
+
 
 
         </div>
