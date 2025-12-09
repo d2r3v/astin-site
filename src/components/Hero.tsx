@@ -3,11 +3,7 @@ import { ArrowRight, Sparkles } from "lucide-react";
 import { motion } from "framer-motion";
 
 function FloatingPaths({ position }: { position: number }) {
-<<<<<<< HEAD
   const paths = Array.from({ length: 36 }, (_, i) => ({
-=======
-  const paths = Array.from({ length: 20 }, (_, i) => ({
->>>>>>> 7ddf14f8dad63161bab4b83a5b954c46faa56699
     id: i,
     d: `M-${380 - i * 5 * position} -${189 + i * 6}C-${380 - i * 5 * position
       } -${189 + i * 6} -${312 - i * 5 * position} ${216 - i * 6} ${152 - i * 5 * position
