@@ -15,15 +15,15 @@ const Footer = () => {
       <div className="absolute inset-0 opacity-30">
         <MeshPattern />
       </div>
-      
+
       <div className="relative max-w-7xl mx-auto">
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           {/* Company Info */}
           <div className="md:col-span-2">
             <div className="mb-4">
-              <img 
-                src={logo} 
-                alt="Astin Analytics" 
+              <img
+                src={logo}
+                alt="Astin Analytics"
                 className="h-14 w-auto mb-3"
               />
             </div>
@@ -31,15 +31,14 @@ const Footer = () => {
               Smarter Operations · Trusted AI
             </p>
             <p className="text-slate-500 text-sm mb-4 max-w-md">
-              Building intelligent, adaptive systems for institutions, enterprises, 
+              Building intelligent, adaptive systems for institutions, enterprises,
               and government agencies.
             </p>
             <div className="flex gap-4">
               <a
-                href="https://linkedin.com"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="#"
                 className="text-slate-400 hover:text-blue-400 transition-colors"
+                aria-label="LinkedIn"
               >
                 <svg
                   className="w-6 h-6"
@@ -51,10 +50,9 @@ const Footer = () => {
                 </svg>
               </a>
               <a
-                href="https://twitter.com"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="#"
                 className="text-slate-400 hover:text-blue-400 transition-colors"
+                aria-label="Twitter"
               >
                 <svg
                   className="w-6 h-6"
@@ -66,10 +64,9 @@ const Footer = () => {
                 </svg>
               </a>
               <a
-                href="https://github.com"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="#"
                 className="text-slate-400 hover:text-blue-400 transition-colors"
+                aria-label="GitHub"
               >
                 <svg
                   className="w-6 h-6"
@@ -145,24 +142,9 @@ const Footer = () => {
               © {new Date().getFullYear()} Astin Analytics · Smarter Operations · Trusted AI
             </p>
             <div className="flex gap-6 text-sm">
-              <a
-                href="#"
-                className="text-slate-400 hover:text-white transition-colors"
-              >
-                Privacy Policy
-              </a>
-              <a
-                href="#"
-                className="text-slate-400 hover:text-white transition-colors"
-              >
-                Terms of Service
-              </a>
-              <a
-                href="#"
-                className="text-slate-400 hover:text-white transition-colors"
-              >
-                Cookie Policy
-              </a>
+              <span className="text-slate-400">Privacy Policy</span>
+              <span className="text-slate-400">Terms of Service</span>
+              <span className="text-slate-400">Cookie Policy</span>
             </div>
           </div>
         </div>
