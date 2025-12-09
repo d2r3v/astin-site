@@ -1,18 +1,17 @@
 import { NodeLinkPattern } from "@/components/BackgroundPatterns";
-
 const About = () => {
   return (
     <section id="about" className="relative py-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
       {/* Clean background */}
       <div className="absolute inset-0 bg-white" />
-      
+
       {/* Node-link geometric pattern */}
       <NodeLinkPattern />
-      
+
       {/* Very subtle gradient accents with new color palette */}
       <div className="absolute top-1/3 right-1/3 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
       <div className="absolute bottom-1/3 left-1/3 w-96 h-96 bg-secondary/5 rounded-full blur-3xl" />
-      
+
       <div className="relative max-w-5xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-4">
@@ -23,13 +22,13 @@ const About = () => {
 
         <div className="max-w-3xl mx-auto space-y-6 text-center">
           <p className="text-xl text-slate-700 leading-relaxed">
-            Astin Analytics is a technology startup delivering smart, AI-driven solutions that 
-            optimize operations and enhance efficiency across the education, enterprise, and 
+            Astin Analytics is a technology startup delivering smart, AI-driven solutions that
+            optimize operations and enhance efficiency across the education, enterprise, and
             government sectors.
           </p>
           <p className="text-lg text-slate-600 leading-relaxed">
-            Founded by professionals with over 30 years of leadership in IT and telecommunications 
-            — and more than 5 years of dedicated AI solution development — we combine proven 
+            Founded by professionals with over 30 years of leadership in IT and telecommunications
+            — and more than 5 years of dedicated AI solution development — we combine proven
             expertise with a deep focus on innovation and reliability.
           </p>
         </div>
@@ -48,8 +47,8 @@ const About = () => {
                 <h3 className="text-2xl font-bold text-slate-900">Our Mission</h3>
               </div>
               <p className="text-slate-700 leading-relaxed">
-                To empower organizations by eliminating operational inefficiencies through 
-                intelligent, adaptive AI technologies — so they can focus on what truly matters: 
+                To empower organizations by eliminating operational inefficiencies through
+                intelligent, adaptive AI technologies — so they can focus on what truly matters:
                 <span className="font-semibold text-slate-900"> security, learning, governance, and innovation.</span>
               </p>
             </div>
@@ -66,8 +65,8 @@ const About = () => {
                 <h3 className="text-2xl font-bold text-slate-900">Our Vision</h3>
               </div>
               <p className="text-slate-700 leading-relaxed">
-                To become the trusted partner for AI-driven operational excellence, setting new 
-                standards in accuracy, reliability, and security across education, enterprise, 
+                To become the trusted partner for AI-driven operational excellence, setting new
+                standards in accuracy, reliability, and security across education, enterprise,
                 and government sectors worldwide.
               </p>
             </div>
