@@ -41,7 +41,7 @@ const Services = () => {
       icon: Sparkles,
       title: "Custom AI Solutions",
       description:
-        "Dedicated development teams design and implement tailored platforms that eliminate operational bottlenecks — delivering adaptable, data-driven intelligence for every organization.",
+        "Dedicated development teams design and implement tailored platforms that eliminate operational bottlenecks, delivering adaptable, data-driven intelligence for every organization.",
       features: [
         "Tailored platform development",
         "Eliminates operational bottlenecks",
